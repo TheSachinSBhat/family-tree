@@ -3,13 +3,46 @@
 
 {% block content %}
 <style>
+	.person-tile {
+		width: 104px;
+		border: 2px solid darkgrey;
+		cursor: pointer;
+	}
 
+		.person-tile .person-profile-pic {
+			height: 100px;
+			width: 100px;
+			background: #ccc;
+		}
+
+			.person-tile .person-profile-pic img {
+				width: 90px;
+				height: 90px;
+				margin: 5px;
+			}
+
+		.person-tile .person-details {
+			height: 20px;
+			width: 100px;
+			font-family: Segoe UI;
+			/* Center Align the Person's Name */
+			text-align: center;
+			vertical-align: middle;
+		}
 </style>
 
 <div class="container">
 	<div>My Family Tree</div>
 	<hr>
 	<div class="family-tree-root">
+		<div class="person-tile">
+			<div class="person-profile-pic">
+				<img alt="Sachin Bhat" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/155/138/3be5434.jpg">
+			</div>
+			<div class="person-details">
+				<div class="person-name">Sachin Bhat</div>
+			</div>
+		</div>
 	</div>
 </div>
 

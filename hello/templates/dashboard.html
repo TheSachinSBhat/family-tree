@@ -3,7 +3,13 @@
 
 {% block content %}
 <style>
+	.person-tile-container
+	{
+		position: absolute;
+	}
+
 	.person-tile {
+		position: absolute;
 		width: 104px;
 		border: 2px solid darkgrey;
 		cursor: pointer;
@@ -35,12 +41,14 @@
 	<div>My Family Tree</div>
 	<hr>
 	<div class="family-tree-root">
-		<div class="person-tile">
-			<div class="person-profile-pic">
-				<img alt="Sachin Bhat" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/155/138/3be5434.jpg">
-			</div>
-			<div class="person-details">
-				<div class="person-name">Sachin Bhat</div>
+		<div class="person-tile-container">
+			<div class="person-tile">
+				<div class="person-profile-pic">
+					<img alt="Sachin Bhat" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/155/138/3be5434.jpg">
+				</div>
+				<div class="person-details">
+					<div class="person-name">Sachin Bhat</div>
+				</div>
 			</div>
 		</div>
 	</div>
